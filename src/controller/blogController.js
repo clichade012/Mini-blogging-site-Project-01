@@ -107,6 +107,7 @@ const GetDataBlog = async function (req, res) {
             for (let i in blogData) {
                 let LastElement = Object.values(blogData[i].authorId)
                 blogData[i].authorId = LastElement.pop() + ". " + LastElement.join(" ")
+                 // "Miss. shradha Kapoor"
             }
 
             //===================== Checking length of blogData =====================//
@@ -134,6 +135,7 @@ const GetDataBlog = async function (req, res) {
         for (let i in blog) {
             let LastElement = Object.values(blog[i].authorId)
             blog[i].authorId = LastElement.pop() + ". " + LastElement.join(" ")
+           // "Miss. shradha Kapoor"
         }
 
         //===================== Checking length of blog =====================//
